@@ -1,0 +1,110 @@
+#myapp {
+    .app-todos {
+      width:500px;
+      border:1px solid #ddd;
+      margin:0 auto;
+      .app-todos-header{
+        background-color:#323232;
+        color:#ddd;
+          text-align: center;
+          h1{
+            font-weight: 600;
+      
+            font-size:20px;
+            }
+    }
+      .app-todos-content {
+        .app-todos-header {
+            display:flex;
+            height: 30px;
+            align-items: center;
+          .todos-header-left {
+           flex:1;
+           text-align: center;
+          }
+          .checkClass{
+              color:greenyellow;
+          }
+          .todos-header-right {
+             flex:8;
+             text-align: center;
+            input {
+                width:75%
+            }
+          }
+      
+        }
+        
+    }  
+     .app-todos-list {
+      border-left: #CDCDCD 1px solid;
+      border-right: #CDCDCD 1px solid;
+        .todos-list-item:hover{
+            .list-item-right{
+                display:block;
+            }
+        }
+        .todos-list-item {
+            display:flex;
+            height:40px;
+            align-items: center;
+          .list-item-left {
+              flex:1;
+              display: flex;
+              justify-content: center;
+            input {
+                
+            }
+          }
+      
+          .list-item-mid {
+              flex:8;
+              display: flex;
+              justify-content: center;
+            .hidden{
+                display:none;
+            }
+            .hidden_input{
+                display:none;
+            }
+            .title {
+            }
+            .completed{
+                color:#ddd;
+                text-decoration: line-through;
+            }
+          }
+      
+          .list-item-right {
+              flex:1;
+              display: flex;
+              display:none;
+              justify-content: center;
+            .delete {
+      
+            }
+          }
+        }
+        }
+        .app-todos-bottom {
+          background-color:#99A7B9;
+            display:flex;
+            justify-content: space-between;
+            .todos-bottom-left {
+          
+            } 
+            .todos-bottom-mid {
+              .bottom-mid-item {
+          
+              }
+              .active{
+                color:green;
+              }
+            }
+          
+            .todos-bottom-right {
+          
+            }
+          }
+  }
+}

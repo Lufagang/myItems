@@ -1,0 +1,79 @@
+#myapp .app-todos {
+  width: 500px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+#myapp .app-todos .app-todos-header {
+  background-color: #323232;
+  color: #ddd;
+  text-align: center;
+}
+#myapp .app-todos .app-todos-header h1 {
+  font-weight: 600;
+  font-size: 20px;
+}
+#myapp .app-todos .app-todos-content .app-todos-header {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+#myapp .app-todos .app-todos-content .app-todos-header .todos-header-left {
+  flex: 1;
+  text-align: center;
+}
+#myapp .app-todos .app-todos-content .app-todos-header .checkClass {
+  color: greenyellow;
+}
+#myapp .app-todos .app-todos-content .app-todos-header .todos-header-right {
+  flex: 8;
+  text-align: center;
+}
+#myapp .app-todos .app-todos-content .app-todos-header .todos-header-right input {
+  width: 75%;
+}
+#myapp .app-todos .app-todos-list {
+  border-left: #CDCDCD 1px solid;
+  border-right: #CDCDCD 1px solid;
+}
+#myapp .app-todos .app-todos-list .todos-list-item:hover .list-item-right {
+  display: block;
+}
+#myapp .app-todos .app-todos-list .todos-list-item {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+#myapp .app-todos .app-todos-list .todos-list-item .list-item-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+#myapp .app-todos .app-todos-list .todos-list-item .list-item-mid {
+  flex: 8;
+  display: flex;
+  justify-content: center;
+}
+#myapp .app-todos .app-todos-list .todos-list-item .list-item-mid .hidden {
+  display: none;
+}
+#myapp .app-todos .app-todos-list .todos-list-item .list-item-mid .hidden_input {
+  display: none;
+}
+#myapp .app-todos .app-todos-list .todos-list-item .list-item-mid .completed {
+  color: #ddd;
+  text-decoration: line-through;
+}
+#myapp .app-todos .app-todos-list .todos-list-item .list-item-right {
+  flex: 1;
+  display: flex;
+  display: none;
+  justify-content: center;
+}
+#myapp .app-todos .app-todos-bottom {
+  background-color: #99A7B9;
+  display: flex;
+  justify-content: space-between;
+}
+#myapp .app-todos .app-todos-bottom .todos-bottom-mid .active {
+  color: green;
+}
